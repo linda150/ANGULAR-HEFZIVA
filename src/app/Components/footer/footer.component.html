@@ -1,0 +1,66 @@
+<footer>
+    <div class="footer">
+    <section class="footer partefooter">
+        <h3 class="titulomapa">Tambien puedes contactarnos</h3>
+    <!--CONTENEDOR DE TEXTO-IMG-FORMULARIO-->
+        <div class="container">
+        <div class="row">
+    <!--FORMULARIO DE CONTACTO-->
+    <div class="rounded float-md-start col-lg-3 col-md-12 col-sm-12"></div>
+    <form [formGroup] = "createClienteForm" (ngSubmit)="sendData ()" >
+        <div class="footer contenido">
+            <div class="container">
+                <div class="row">
+                <div class="col-lg-12 col-md-6 col-sm-12">
+                    <label for="nombre">Escriba su nombre</label>
+                    <input formControlName="name" type="text" id="name" name="nombre" placeholder="nombre" required>
+                    <p *ngIf= "createClienteForm.get('name').hasError('name')">
+                        <b>Error el campo debe estar lleno</b>
+                    </p>
+                    <br><br>
+                </div>
+                <div class="col-lg-12 col-md-6 col-sm-12">
+                    <label for="apellido">Escriba su apellido</label>
+                    <input formControlName="lastname" type="text" id="lastname" name="apellido" placeholder="apellido" required>
+                    <br><br>
+                </div>
+                <div class="col-lg-12 col-md-6 col-sm-12">
+                    <label for="numero">Celular</label>
+                    <input formControlName="cellphone" type="number" id="cellphone" name="numero" placeholder="numero" required>
+                    <br><br>
+                </div>
+                <div class="col-lg-12 col-md-6 col-sm-12">
+                    <label for="product">¿Cuál canasta le llama la atención?</label>
+                    <select formControlName="product" name="product" id="product">
+                        <option value="canasta baby">canasta baby</option>
+                        <option value="canasta kids">canasta kids</option>
+                        <option value="canasta caballero">canasta caballero</option>
+                        <option value="canasta dama">canasta dama</option>
+                    </select>
+                    <br><br>
+                </div>
+                </div>
+             </div>
+        </div> 
+            <button>Enviar</button>
+    </form>
+    <!--CONTENEDOR DE IMG-TEXTO
+    <div class="textofooter container">
+        <div class="row">
+    <p class="rounded float-md-end col-lg-3 col-md-12 col-sm-12">Todos nuestros pedidos son <br> puerta a puerta por un costo de <br> 10.000 pesos</p>
+    <img src="../../../assets/imagenes/Canastakids.png" class="IMG-TEXTO float-md-end col-lg-3 col-md-12 col-sm-12" alt="Canastakids" width="10px">
+        </div>
+    </div>-->
+    </div>
+    </div>
+    <!--PARTE DE LOS ICONOS-->
+
+     <div class="footer iconosredes">
+         <div class="ajusteiconos">
+             <a href="https://www.instagram.com/mariacatalina5663/?igshid=xht1s1yw2t7p" target="_blank"> <img src="assets/iconos/Instagram.png" alt="iconoinstagram"></a>
+             <a href="https://www.facebook.com/Hefzi-V%C3%A1-54-102329211555845" target="_blank"> <img src="assets/iconos/Facebook.png" alt="iconofacebook"></a>
+         </div>
+     </div>
+    </section>
+   </div>
+</footer>

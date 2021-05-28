@@ -1,0 +1,14 @@
+.container-fluid{
+    background-image: url(../../../assets/imagenes/Fondomenu.png);
+    font-family: Ink Free;
+    color: #000;
+}
+.navbar-nav>li:hover{
+    background-color: rgb(255, 212, 246);
+    color: white;
+    width: 30px;
+    text-align: center;
+    border-radius: 150px;
+    padding: 5px;
+    
+}
