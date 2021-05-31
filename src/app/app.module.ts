@@ -10,6 +10,7 @@ import { MenuComponent } from './Components/menu/menu.component';
 import { FooterComponent } from './Components/footer/footer.component';
 import { HomeComponent} from "./Components/home/home.component";
 import { ProductsComponent } from './Components/products/products.component';
+import { MeetusComponent } from './Components/meetus/meetus.component';
 
 
 const routesApp: Routes = [
@@ -17,6 +18,7 @@ const routesApp: Routes = [
   { path: 'home', component: HomeComponent},
   { path: 'products', component: ProductsComponent},
   { path: 'footer', component: FooterComponent},
+  { path: 'meetus', component: MeetusComponent},
 ]
 
 @NgModule({
@@ -26,6 +28,7 @@ const routesApp: Routes = [
     FooterComponent,
     HomeComponent,
     ProductsComponent,
+    MeetusComponent,
   ],
   imports: [
     BrowserModule,
